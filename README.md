@@ -22,35 +22,55 @@ Price_per_sqft: price / size.
 
 
 Steps Performed
+
 * Data Preprocessing
+
 Load dataset using pandas.
+
 Handle missing values (drop or impute).
+
 Extract BHK from propertyType.
+
 Calculate Price_per_sqft.
+
 Encode categorical variables with OneHotEncoder.
+
 Scale numerical features with StandardScaler.
 
 * Exploratory Data Analysis (EDA)
+
 Plot distribution of prices.
+
 Correlation heatmap for numeric features.
+
 Price by location.
+
 Furnishing status vs price.
 
 * Model Training
+
 Applied multiple regression models:
+
 Linear Regression (baseline)
+
 Random Forest Regressor
+
 XGBoost Regressor
+
 LightGBM Regressor
 
 * Evaluation Metrics
 Used:
+
 RMSE (Root Mean Squared Error)
+
 MAE (Mean Absolute Error)
+
 R² Score (Coefficient of Determination)
 
 * Visualization
 Actual vs Predicted Price (scatter plot).
+
 Feature Importance (tree-based models).
 
 # Results
@@ -65,5 +85,7 @@ Feature Importance (tree-based models).
 # Future Improvements
 
 Add more engineered features (amenities, nearby facilities).
+
 Use hyperparameter tuning (GridSearchCV / Optuna).
+
 Deploy as a web app with Streamlit or Flask.
